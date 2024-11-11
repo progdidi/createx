@@ -1,0 +1,9 @@
+.social-list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    &__item {
+        width: 24px;
+        height: 24px;
+    }
+}
