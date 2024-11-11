@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import './header.scss';
 
 const Header = () => {
     return ( 
@@ -9,17 +10,17 @@ const Header = () => {
 
                     <nav className="menu">
                         <ul className="menu__list">
-                            <li className="menu__list-item"><a href="" className="menu__list-link"></a></li>
-                            <li className="menu__list-item"><a href="" className="menu__list-link"></a></li>
-                            <li className="menu__list-item"><a href="" className="menu__list-link"></a></li>
-                            <li className="menu__list-item"><a href="" className="menu__list-link"></a></li>
-                            <li className="menu__list-item"><a href="" className="menu__list-link"></a></li>
+                            <li className="menu__list-item"><a href="" className="menu__list-link">About Us</a></li>
+                            <li className="menu__list-item"><a href="" className="menu__list-link">Courses</a></li>
+                            <li className="menu__list-item"><a href="" className="menu__list-link">Events</a></li>
+                            <li className="menu__list-item"><a href="" className="menu__list-link">Blog</a></li>
+                            <li className="menu__list-item"><a href="" className="menu__list-link">Contacts</a></li>
                         </ul>
                     </nav>
 
                     <div className="header__buttons">
-                        <button className="header__btn"></button>
-                        <button className="header__btn"></button>
+                        <button className="header__btn orange-btn">Get consultation</button>
+                        <button className="header__btn">Log in / Register</button>
                     </div>
                 </div>
             </div>
