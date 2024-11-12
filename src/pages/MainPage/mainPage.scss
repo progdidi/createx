@@ -78,9 +78,49 @@
     .benefits__item-info {
     }
     .benefits__item-title {
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 130%;
+        color: var(--title-text);
     }
     .benefits__item-descr {
     }
     
 }
+
+.events {
+    background: var(--pink-color);
+}
+
+.certificate {
+    .container {
+    }
+    .certificate__inner {
+        display: flex;
+    }
+    .certificate-info {
+    }
+    .section-subtitle {
+    }
+    .section-title {
+    }
+    .certificate-info__text {
+    }
+    .brands {
+        display: flex;
+    }
+    .brands__img {
+    }
+    .certificate-media {
+    }
+    .certificate-media__img {
+    }
+}
+
+.team {
+    &__items {
+        display: flex;
+    }
+}
+
 

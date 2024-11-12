@@ -4,9 +4,17 @@ import './mainPage.scss';
 import promo from './images/promo.svg';
 import advantages from './images/advantages.png';
 import benefits from './images/benefits.svg';
+import certificate from './images/certificate.png';
+import br1 from './images/br1.svg';
+import br2 from './images/br2.svg';
+import br3 from './images/br3.svg';
 
 //components
 import CourseItem from '../../components/CourseItem/CourseItem';
+import EventItem from '../../components/EventItem/EventItem';
+import TutorItem from '../../components/TutorItem/TutorItem';
+import ReviewItem from '../../components/ReviewItem/ReviewItem';
+import BlogItem from '../../components/BlogItem/BlogItem';
 
 
 const MainPage = () => {
@@ -110,6 +118,71 @@ const MainPage = () => {
             </div>
         </section>
 
+        <section className="events">
+            <div className="container">
+                <h6 className="section-subtitle">Our Events</h6>
+                <h2 className="section-title">Lectures & workshops</h2>
+
+                <div className="events__list">
+                    <EventItem/>
+                </div>
+            </div>
+        </section>
+
+        <section className="certificate">
+            <div className="container">
+                <div className="certificate__inner">
+                    <div className="certificate-info">
+                        <h6 className="section-subtitle">Our Events</h6>
+                        <h2 className="section-title">Lectures & workshops</h2>
+
+                        <p className="certificate-info__text">We are accredited by international professional organizations and institutes:</p>
+
+                        <div className="brands">
+                            <img src={br1} alt="" className="brands__img" />
+                            <img src={br2} alt="" className="brands__img" />
+                            <img src={br3} alt="" className="brands__img" />
+                        </div>
+                    </div>
+                    <div className="certificate-media"><img src={certificate} alt="" className="certificate-media__img" /></div>
+                </div>
+            </div>
+        </section>
+
+        <section className="team">
+            <div className="container">
+                <h6 className="section-subtitle">Best tutors are all here</h6>
+                <h2 className="section-title">Meet our team</h2>
+
+                <div className="team__items">
+                    <TutorItem/>
+                    <TutorItem/>
+                    <TutorItem/>
+                </div>
+            </div>
+        </section>
+
+        <section className="reviews">
+            <div className="container">
+                <h6 className="section-subtitle">TESTIMONIALS</h6>
+                <h2 className="section-title">What our students say</h2>
+
+                <div className="review__items">
+                    <ReviewItem/>
+                </div>
+            </div>
+        </section>
+
+        <section className="blog">
+            <div className="container">
+                <h6 className="section-subtitle">Our blog</h6>
+                <h2 className="section-title">Latest posts</h2>
+
+                <div className="blog__items">
+                    <BlogItem/>
+                </div>
+            </div>
+        </section>
 
         </>
      );
