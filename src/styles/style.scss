@@ -5,6 +5,7 @@
 @import './vars';
 
 
+
 body {
     font-family: "Lato", sans-serif;
     font-weight: 400;
@@ -27,6 +28,30 @@ a {
     padding: 0 10px;
 }
 
+.section-title{
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 130%;
+    color: var(--title-text);
+}
+
+.section-subtitle {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--title-text);
+    margin-bottom: 8px;
+}
+
+.item-title {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 130%;
+    color: var(--title-text);
+}
+
 .orange-btn {
     background: var(--orange-color);
     font-weight: 700;
@@ -38,3 +63,4 @@ a {
     padding: 0 40px;
     border-radius: 4px;
 }
+
