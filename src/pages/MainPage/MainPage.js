@@ -164,12 +164,27 @@ const MainPage = () => {
 
         <section className="reviews">
             <div className="container">
-                <h6 className="section-subtitle">TESTIMONIALS</h6>
-                <h2 className="section-title">What our students say</h2>
+                <div className="reviews__inner">
+                    <h6 className="section-subtitle">TESTIMONIALS</h6>
+                    <h2 className="section-title">What our students say</h2>
 
-                <div className="review__items">
-                    <ReviewItem/>
+                    <div className="reviews-slider">
+                        <div className="reviews__items">
+                            <ReviewItem/>
+                        </div>
+
+                        <div className="reviews__buttons">
+                            <button className="reviews__btn active"></button>
+                            <button className="reviews__btn"></button>
+                            <button className="reviews__btn"></button>
+                            <button className="reviews__btn"></button>
+                            <button className="reviews__btn"></button>
+                        </div>
+                    </div>
                 </div>
+                
+
+                
             </div>
         </section>
 
