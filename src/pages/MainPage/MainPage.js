@@ -81,8 +81,8 @@ const MainPage = () => {
 
         <section className="featured">
             <div className="container">
-                <h6 className="section-subtitle">Who we are</h6>
-                <h2 className="section-title">Why Createx?</h2>
+                <h6 className="section-subtitle">Ready to learn?</h6>
+                <h2 className="section-title">Featured Courses</h2>
 
                 <div className="featured__items">
                     <CourseItem></CourseItem>
@@ -154,11 +154,15 @@ const MainPage = () => {
                 <h6 className="section-subtitle">Best tutors are all here</h6>
                 <h2 className="section-title">Meet our team</h2>
 
-                <div className="team__items">
-                    <TutorItem/>
-                    <TutorItem/>
-                    <TutorItem/>
+                <div className="team-slider">
+                    <div className="team__items">
+                        <TutorItem/>
+                        <TutorItem/>
+                        <TutorItem/>
+                    </div>
                 </div>
+
+                
             </div>
         </section>
 
