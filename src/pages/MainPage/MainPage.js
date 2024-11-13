@@ -175,12 +175,34 @@ const MainPage = () => {
 
         <section className="blog">
             <div className="container">
-                <h6 className="section-subtitle">Our blog</h6>
-                <h2 className="section-title">Latest posts</h2>
+                <div className="blog__inner">
+                    <h6 className="section-subtitle">Our blog</h6>
+                    <h2 className="section-title">Latest posts</h2>
 
-                <div className="blog__items">
-                    <BlogItem/>
+                    <a href="" className="blog__btn orange-btn">Go to blog</a>
+
+                    <div className="blog__items">
+                        <BlogItem/>
+                        <BlogItem/>
+                        <BlogItem/>
+                    </div>
                 </div>
+                
+            </div>
+        </section>
+
+        <section className="newsletter">
+            <div className="container">
+                <div className="newsletter__inner">
+                    <h6 className="section-subtitle">Don’t miss anything</h6>
+                    <h2 className="section-title">Subscribe to the Createx School announcements</h2>
+
+                    <form action="" className="newsletter-form">
+                        <input type="mail" className="newsletter-form__input" placeholder='Your working email'/>
+                        <button className="newsletter-form__btn orange-btn">Subscribe</button>
+                    </form>
+                </div>
+                
             </div>
         </section>
 
