@@ -2,6 +2,7 @@ import './singleCoursePage.scss';
 
 //components
 import ReviewsSection from '../../components/ReviewsSection/ReviewsSection';
+import CourseItem from '../../components/CourseItem/CourseItem';
 
 //images
 import example from './example.png';
@@ -12,6 +13,10 @@ import facebook from './icons/social/facebook.svg';
 import behance from './icons/social/behance.svg';
 import twitter from './icons/social/twitter.svg';
 import linkedin from './icons/social/linkedin.svg';
+import program from './program.svg';
+import register from './register.svg';
+import NextBtn from '../../components/NextBtn/NextBtn';
+import PrevBtn from '../../components/PrevBtn/PrevBtn';
 
 const SingleCoursePage = () => {
     return ( 
@@ -196,7 +201,129 @@ const SingleCoursePage = () => {
         </section>
 
         <section className="course-program">
-            <div className="container"></div>
+            <div className="container">
+                <div className="course-program__info">
+                    <div className="course-program__info">
+                        <h6 className="section-subtitle">Course program</h6>
+                        <h2 className="section-title">What will you learn</h2>
+
+                        <div className="section-program__list">
+                            <div className="section-program__item">
+                                <button className="section-program__item-btn"> +
+                                    <h6 className="section-program__item-title"><span>Lesson 1.</span> Aliquet lectus urna viverra in odio.</h6>
+                                </button>
+                                <p className="section-program__item-text">Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</p>
+                            </div>
+
+                            <div className="section-program__item">
+                                <button className="section-program__item-btn"> +
+                                    <h6 className="section-program__item-title"><span>Lesson 2.</span> Aliquet lectus urna viverra in odio.</h6>
+                                </button>
+                                <p className="section-program__item-text">Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</p>
+                            </div>
+
+                            <div className="section-program__item">
+                                <button className="section-program__item-btn"> +
+                                    <h6 className="section-program__item-title"><span>Lesson 3.</span> Aliquet lectus urna viverra in odio.</h6>
+                                </button>
+                                <p className="section-program__item-text">Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</p>
+                            </div>
+
+                            <div className="section-program__item">
+                                <button className="section-program__item-btn"> +
+                                    <h6 className="section-program__item-title"><span>Lesson 4.</span> Aliquet lectus urna viverra in odio.</h6>
+                                </button>
+                                <p className="section-program__item-text">Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</p>
+                            </div>
+
+                            <div className="section-program__item">
+                                <button className="section-program__item-btn"> +
+                                    <h6 className="section-program__item-title"><span>Lesson 5.</span> Massa vel arcu mauris, id vel rhoncus mattis quis.</h6>
+                                </button>
+                                <p className="section-program__item-text">Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</p>
+                            </div>
+
+                            <div className="section-program__item">
+                                <button className="section-program__item-btn"> +
+                                    <h6 className="section-program__item-title"><span>Lesson 6.</span> Aliquet lectus urna viverra in odio.</h6>
+                                </button>
+                                <p className="section-program__item-text">Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</p>
+                            </div>
+
+                            <div className="section-program__item">
+                                <button className="section-program__item-btn"> +
+                                    <h6 className="section-program__item-title"><span>Lesson 7.</span> Massa vel arcu mauris, id vel rhoncus mattis quis.</h6>
+                                </button>
+                                <p className="section-program__item-text">Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</p>
+                            </div>
+
+                            <div className="section-program__item">
+                                <button className="section-program__item-btn"> +
+                                    <h6 className="section-program__item-title"><span>Lesson 8.</span> Aliquet lectus urna viverra in odio.</h6>
+                                </button>
+                                <p className="section-program__item-text">Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="course-program__media">
+                    <img src={program} alt="" className="course-program__media-img" />
+                </div>
+            </div>
+        </section>
+
+        <ReviewsSection/>
+
+        <section className="register">
+            <div className="container">
+                <div className="register__inner">
+                    <div className="register__media"><img src={register} alt="" className="register__media-img" /></div>
+
+                    <div className="register__info">
+                        <h6 className="section-subtitle">Leave a request now and get 20% off!</h6>
+                        <h2 className="section-title">Register for the course</h2>
+
+                        <form action="" className="register-form">
+                            <label htmlFor="" className="register-form__label">Full Name
+                                <input type="text" className="register-form__input" placeholder='Your full name'/>
+                            </label>
+                            <label htmlFor="" className="register-form__label">Email
+                                <input type="text" className="register-form__input" placeholder='Your working email'/>
+                            </label>
+                            <label htmlFor="" className="register-form__label">Phone
+                                <input type="text" className="register-form__input" placeholder='Your phone number'/>
+                            </label>
+                        
+                        <button className="register-form__btn orange-btn">Join the course</button>
+                        
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section className="other-courses">
+            <div className="container">
+                <h6 className="section-subtitle"></h6>
+                <h2 className="section-title"></h2>
+
+                <div className="courses-slider">
+                    <div className="courses-slider__buttons">
+                        <PrevBtn/>
+                        <NextBtn/>
+                    </div>
+                    <div className="courses-slider__items">
+                        <CourseItem/>
+                        <CourseItem/>
+                    </div>
+
+                    <div className="other-courses__more">
+                        <p className="other-courses__more-text">Do you want more courses?</p>
+                        <button className="other-courses__more-btn orange-btn">View all courses</button>
+                    </div>
+                </div>
+            </div>
         </section>
 
         </>
