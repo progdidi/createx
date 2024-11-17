@@ -1,4 +1,5 @@
 import './mainPage.scss';
+import { NavLink } from 'react-router-dom';
 
 //images
 import promo from './images/promo.svg';
@@ -8,6 +9,10 @@ import certificate from './images/certificate.png';
 import br1 from './images/br1.svg';
 import br2 from './images/br2.svg';
 import br3 from './images/br3.svg';
+import btn1 from './images/benefits/btn1.svg'; 
+import btn2 from './images/benefits/btn2.svg'; 
+import btn3 from './images/benefits/btn3.svg'; 
+import btn4 from './images/benefits/btn4.svg'; 
 
 //components
 import CourseItem from '../../components/CourseItem/CourseItem';
@@ -72,8 +77,7 @@ const MainPage = () => {
                             <li className="advantages-list__item">Tincidunt sagittis neque sem ac eget.</li>
                             <li className="advantages-list__item">Ultricies amet justo et eget quisque purus vulputate dapibus tortor.</li>
                         </ul>
-
-                        <button className="advantages__button orange-btn">More about us</button>
+                        <NavLink to="/about" className="advantages__button orange-btn">More about us</NavLink>
                     </div>
                 </div>
             </div>
@@ -96,24 +100,32 @@ const MainPage = () => {
                 <h6 className="section-subtitle">Our benefits</h6>
                 <h2 className="section-title">That’s how we do it</h2>
 
-                <div className="benefits__items">
+                <div className="benefits__inner">
                     <div className="benefits__tabs">
-                        <button className="benefits__btn">Experienced Tutors</button>
-                        <button className="benefits__btn">Feedback & Support</button>
-                        <button className="benefits__btn">24/7 Online Library</button>
-                        <button className="benefits__btn">Community</button>
+                        <button className="benefits__btn active">
+                            <img src={btn1} alt="" className="benefits__btn-img" /> Experienced Tutors</button>
+                        <button className="benefits__btn">
+                            <img src={btn2} alt="" className="benefits__btn-img" /> Feedback & Support</button>
+                        <button className="benefits__btn">
+                            <img src={btn3} alt="" className="benefits__btn-img" /> 24/7 Online Library</button>
+                        <button className="benefits__btn">
+                            <img src={btn4} alt="" className="benefits__btn-img" /> Community</button>
                     </div>
 
-                    <div className="benefits__item">
-                        <div className="benefits__item-info">
-                            <h5 className="benefits__item-title item-title">Only practicing tutors</h5>
-                            <p className="benefits__item-descr">Urna nisi, arcu cras nunc. Aenean quam est lobortis mi non fames dictum suspendisse. Morbi mauris cras massa ut dolor quis sociis mollis augue. Nunc, sodales tortor sit diam mi amet massa. Fermentum diam diam sociis vestibulum. Nulla nisl accumsan, id dignissim massa ut amet. Amet enim, nisi tempus vehicula.</p>
-                        </div>
+                    <div className="benefits__items">
+                        <div className="benefits__item active">
+                            <div className="benefits__item-info">
+                                <h5 className="benefits__item-title item-title">Only practicing tutors</h5>
+                                <p className="benefits__item-descr">Urna nisi, arcu cras nunc. Aenean quam est lobortis mi non fames dictum suspendisse. Morbi mauris cras massa ut dolor quis sociis mollis augue. Nunc, sodales tortor sit diam mi amet massa. Fermentum diam diam sociis vestibulum. Nulla nisl accumsan, id dignissim massa ut amet. Amet enim, nisi tempus vehicula.</p>
+                            </div>
 
-                        <div className="benefits__item-media">
-                            <img src={benefits} alt="" className="benefits__item-img" />
+                            <div className="benefits__item-media">
+                                <img src={benefits} alt="" className="benefits__item-img" />
+                            </div>
                         </div>
                     </div>
+
+                    
                 </div>
             </div>
         </section>

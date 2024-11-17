@@ -90,6 +90,7 @@
                 }
             }
             .advantages__button {
+                display: block;
             }
         }
         
@@ -107,26 +108,71 @@
 }
 
 .benefits {
-    .benefits__items {
+    padding-bottom: 120px;
+    .section-title, .section-subtitle {
+        text-align: center;
     }
-    .benefits__tabs {
-        display: flex;
-    }
-    .benefits__btn {
-    }
-    .benefits__item {
-        display: flex;
-    }
-    .benefits__item-info {
-    }
-    .benefits__item-title {
-        font-weight: 900;
-        font-size: 32px;
-        line-height: 130%;
-        color: var(--title-text);
-    }
-    .benefits__item-descr {
-    }
+    .benefits__inner {
+        .benefits__tabs {
+            margin-top: 60px;
+            display: grid;
+            margin-bottom: 60px;
+            grid-template-columns: repeat(4, 1fr);
+            .benefits__btn {
+                width: 100%;
+                padding: 10px 0;
+                display: flex;
+                justify-content: center;
+                gap: 8px;
+                align-items: center;
+                transition: all 0.3s;
+                font-weight: 700;
+                color: #9a9ca5;
+                border-radius: 4px;
+                border: 1px solid transparent;
+                &:hover {
+                    color: var(--primary-color);
+                    border: 1px solid var(--primary-color);
+                    
+                }
+                &.active {
+                    color: var(--primary-color);
+                    border: 1px solid var(--primary-color);
+                }
+            }
+        }
+    
+        .benefits__items {
+            .benefits__item {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                &-info {
+                    width: 495px;
+    
+                }
+    
+                &-title {
+                    font-weight: 900;
+                    font-size: 32px;
+                    line-height: 130%;
+                    color: var(--title-text);
+                    margin-bottom: 24px;
+                }
+    
+                &-descr {
+                    color:  #424551;
+                }
+
+                &-media {
+                    width: 600px;
+                    .benefits__item-img {
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }    
     
 }
 
