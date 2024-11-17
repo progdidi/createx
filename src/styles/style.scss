@@ -56,6 +56,24 @@ section {
     padding: 80px 0;
 }
 
+//tabs
+.tab__btn {
+    transition: all 0.3s;
+    font-weight: 700;
+    color: #9a9ca5;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    &:hover {
+        color: var(--primary-color);
+        border: 1px solid var(--primary-color);
+        
+    }
+    &.active {
+        color: var(--primary-color);
+        border: 1px solid var(--primary-color);
+    }
+}
+
 //slider 
 
 .slider__buttons {

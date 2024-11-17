@@ -1,0 +1,19 @@
+.search-form {
+    padding: 12px 16px;
+    border: 1px solid #d7dadd;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    width: 315px;
+    &__input {
+        width: 100%;
+        border: none;
+    }
+
+    &__btn {
+        &-img {
+            width: 16px;
+            height: 16px;
+        }
+    }
+}

@@ -5,10 +5,6 @@ import { NavLink } from 'react-router-dom';
 import promo from './images/promo.svg';
 import advantages from './images/advantages.png';
 import benefits from './images/benefits.svg';
-import certificate from './images/certificate.png';
-import br1 from './images/br1.svg';
-import br2 from './images/br2.svg';
-import br3 from './images/br3.svg';
 import btn1 from './images/benefits/btn1.svg'; 
 import btn2 from './images/benefits/btn2.svg'; 
 import btn3 from './images/benefits/btn3.svg'; 
@@ -18,10 +14,12 @@ import btn4 from './images/benefits/btn4.svg';
 import CourseItem from '../../components/CourseItem/CourseItem';
 import EventItem from '../../components/EventItem/EventItem';
 import TutorItem from '../../components/TutorItem/TutorItem';
-import ReviewItem from '../../components/ReviewItem/ReviewItem';
 import BlogItem from '../../components/BlogItem/BlogItem';
 import NextBtn from '../../components/NextBtn/NextBtn';
 import PrevBtn from '../../components/PrevBtn/PrevBtn';
+import ReviewsSection from '../../components/ReviewsSection/ReviewsSection';
+import NewsletterSection from '../../components/NewsletterSection/NewsletterSection';
+import CertificateSection from '../../components/CertificateSection/CertificateSection';
 
 
 const MainPage = () => {
@@ -104,13 +102,13 @@ const MainPage = () => {
 
                 <div className="benefits__inner">
                     <div className="benefits__tabs">
-                        <button className="benefits__btn active">
+                        <button className="benefits__btn  tab__btn active">
                             <img src={btn1} alt="" className="benefits__btn-img" /> Experienced Tutors</button>
-                        <button className="benefits__btn">
+                        <button className="benefits__btn tab__btn ">
                             <img src={btn2} alt="" className="benefits__btn-img" /> Feedback & Support</button>
-                        <button className="benefits__btn">
+                        <button className="benefits__btn tab__btn ">
                             <img src={btn3} alt="" className="benefits__btn-img" /> 24/7 Online Library</button>
-                        <button className="benefits__btn">
+                        <button className="benefits__btn tab__btn ">
                             <img src={btn4} alt="" className="benefits__btn-img" /> Community</button>
                     </div>
 
@@ -150,25 +148,7 @@ const MainPage = () => {
             </div>
         </section>
 
-        <section className="certificate">
-            <div className="container">
-                <div className="certificate__inner">
-                    <div className="certificate-info">
-                        <h6 className="section-subtitle">Createx Certificate</h6>
-                        <h2 className="section-title">Your expertise will be confirmed</h2>
-
-                        <p className="certificate-info__text">We are accredited by international professional organizations and institutes:</p>
-
-                        <div className="brands">
-                            <img src={br1} alt="" className="brands__img" />
-                            <img src={br2} alt="" className="brands__img" />
-                            <img src={br3} alt="" className="brands__img" />
-                        </div>
-                    </div>
-                    <div className="certificate-media"><img src={certificate} alt="" className="certificate-media__img" /></div>
-                </div>
-            </div>
-        </section>
+       <CertificateSection/>
 
         <section className="team">
             <div className="container">
@@ -194,37 +174,7 @@ const MainPage = () => {
             </div>
         </section>
 
-        <section className="reviews">
-            <div className="container">
-                <div className="reviews__inner">
-                    <h6 className="section-subtitle">TESTIMONIALS</h6>
-                    <h2 className="section-title">What our students say</h2>
-
-                    <div className="reviews-slider">
-                        <div className="reviews__items">
-                            <ReviewItem/>
-                        </div>
-
-                        <div className="reviews__buttons">
-                            <button className="reviews__btn active"></button>
-                            <button className="reviews__btn"></button>
-                            <button className="reviews__btn"></button>
-                            <button className="reviews__btn"></button>
-                            <button className="reviews__btn"></button>
-                        </div>
-
-                        <div className="reviews-slider__buttons slider__buttons">
-                            <PrevBtn/>
-                            <NextBtn/>
-                        </div>
-                        
-                    </div>
-                </div>
-                
-
-                
-            </div>
-        </section>
+        <ReviewsSection/>
 
         <section className="blog">
             <div className="container">
@@ -244,20 +194,7 @@ const MainPage = () => {
             </div>
         </section>
 
-        <section className="newsletter">
-            <div className="container">
-                <div className="newsletter__inner">
-                    <h6 className="section-subtitle">Don’t miss anything</h6>
-                    <h2 className="section-title">Subscribe to the Createx School announcements</h2>
-
-                    <form action="" className="newsletter-form">
-                        <input type="mail" className="newsletter-form__input" placeholder='Your working email'/>
-                        <button className="newsletter-form__btn orange-btn">Subscribe</button>
-                    </form>
-                </div>
-                
-            </div>
-        </section>
+        <NewsletterSection/>
 
         </>
      );
