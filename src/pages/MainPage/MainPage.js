@@ -137,6 +137,13 @@ const MainPage = () => {
 
                 <div className="events__list">
                     <EventItem/>
+                    <EventItem/>
+                    <EventItem/>
+                </div>
+
+                <div className="events__link">
+                    <p className="events__link-text">Do you want more?</p>
+                    <a href="" className="events__link-btn orange-btn">Explore all events</a>
                 </div>
             </div>
         </section>

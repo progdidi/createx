@@ -1,19 +1,34 @@
 .event-item {
     display: flex;
+    align-items: flex-start;
     border-radius: 4px;
     background-color: #fff;
+    padding: 32px 40px;
+    width: 100%;
+    gap: 20px;
+    margin-bottom: 24px;
     .event-item__date {
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 130%;
+        letter-spacing: 0.02em;
+        color: var(--primary-color);
     }
     .event-item__details {
     }
     .item-title {
+        margin-bottom: 4px;
+        
     }
     .event-item__text {
+        color: #787a80;
     }
     .event-item__info {
+        padding: 0 20px;
     }
     .event-item__link {
-    }
-    .orange-btn {
+        width: 135px;
+        display: block;
+        padding: 0;
     }
 }

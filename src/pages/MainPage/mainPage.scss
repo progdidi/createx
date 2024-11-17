@@ -178,6 +178,33 @@
 
 .events {
     background: var(--pink-color);
+    .section-title, .section-subtitle {
+        text-align: center;
+    }
+
+    .events__list {
+        margin-top: 60px;
+        margin-bottom: 60px;
+        
+    }
+
+    .events__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        &-text {
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 150%;
+            color: var(--title-text);
+        }
+        &-btn {
+            width: 214px;
+            padding: 0;
+            display: block;
+        }
+    }
 }
 
 .certificate {
