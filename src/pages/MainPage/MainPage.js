@@ -20,6 +20,8 @@ import EventItem from '../../components/EventItem/EventItem';
 import TutorItem from '../../components/TutorItem/TutorItem';
 import ReviewItem from '../../components/ReviewItem/ReviewItem';
 import BlogItem from '../../components/BlogItem/BlogItem';
+import NextBtn from '../../components/NextBtn/NextBtn';
+import PrevBtn from '../../components/PrevBtn/PrevBtn';
 
 
 const MainPage = () => {
@@ -152,8 +154,8 @@ const MainPage = () => {
             <div className="container">
                 <div className="certificate__inner">
                     <div className="certificate-info">
-                        <h6 className="section-subtitle">Our Events</h6>
-                        <h2 className="section-title">Lectures & workshops</h2>
+                        <h6 className="section-subtitle">Createx Certificate</h6>
+                        <h2 className="section-title">Your expertise will be confirmed</h2>
 
                         <p className="certificate-info__text">We are accredited by international professional organizations and institutes:</p>
 
@@ -170,17 +172,24 @@ const MainPage = () => {
 
         <section className="team">
             <div className="container">
-                <h6 className="section-subtitle">Best tutors are all here</h6>
-                <h2 className="section-title">Meet our team</h2>
+                <div className="team__inner">
+                    <h6 className="section-subtitle">Best tutors are all here</h6>
+                    <h2 className="section-title">Meet our team</h2>
 
-                <div className="team-slider">
-                    <div className="team__items">
-                        <TutorItem/>
-                        <TutorItem/>
-                        <TutorItem/>
+                    <div className="team-slider">
+                        <div className="team__items">
+                            <TutorItem/>
+                            <TutorItem/>
+                            <TutorItem/>
+                            <TutorItem/>
+                        </div>
+
+                        <div className="slider__buttons team-slider__buttons">
+                            <PrevBtn/>
+                            <NextBtn/>
+                        </div>
                     </div>
                 </div>
-
                 
             </div>
         </section>
@@ -203,6 +212,12 @@ const MainPage = () => {
                             <button className="reviews__btn"></button>
                             <button className="reviews__btn"></button>
                         </div>
+
+                        <div className="reviews-slider__buttons slider__buttons">
+                            <PrevBtn/>
+                            <NextBtn/>
+                        </div>
+                        
                     </div>
                 </div>
                 

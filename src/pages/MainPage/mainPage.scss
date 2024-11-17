@@ -208,27 +208,32 @@
 }
 
 .certificate {
-    .container {
-    }
+    padding: 120px 0;
     .certificate__inner {
         display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
     }
     .certificate-info {
-    }
-    .section-subtitle {
-    }
-    .section-title {
-    }
-    .certificate-info__text {
-    }
-    .brands {
-        display: flex;
-    }
-    .brands__img {
+        width: 397px;
+        .section-title {
+            margin-bottom: 48px;
+        }
+        .certificate-info__text {
+            margin-bottom: 32px;
+        }
+        .brands {
+            display: flex;
+            justify-content: space-between;
+        }
+        .brands__img {
+        }
     }
     .certificate-media {
-    }
-    .certificate-media__img {
+        width: 705px;
+        &-img {
+            object-fit: cover;
+        }
     }
 }
 
@@ -237,8 +242,17 @@
     .section-title {
         margin-bottom: 60px;
     }
+    &__inner {
+        position: relative;
+        .team-slider__buttons {
+            position: absolute;
+            right: 0;
+            top: 56px;
+        }
+    }
     &__items {
         display: flex;
+        gap: 20px;
     }
 }
 
@@ -259,24 +273,39 @@
 
     }
 
-    .reviews__items {
-        margin-bottom: 60px;
-    }
+    .reviews-slider {
+        position: relative;
+        .reviews-slider__buttons {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            justify-content: space-between;
+            width: 100%;
+        }
 
-    .reviews__buttons {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 12px;
-        .reviews__btn {
-            width: 30px;
-            height: 3px;
-            background-color:  #b3b7bc;
-            &.active {
-                background-color: #424551;
+        .reviews__items {
+            margin-bottom: 60px;
+        }
+    
+        .reviews__buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            .reviews__btn {
+                width: 30px;
+                height: 3px;
+                background-color:  #b3b7bc;
+                &.active {
+                    background-color: #424551;
+                }
             }
         }
     }
+
+    
+
+    
 }
 
 .blog {
