@@ -70,12 +70,12 @@ const MainPage = () => {
                         <h6 className="section-subtitle">Who we are</h6>
                         <h2 className="section-title">Why Createx?</h2>
                         <ul className="advantages-list">
-                            <li className="advantages-list__item">A fermentum in morbi pretium aliquam adipiscing donec tempus.</li>
-                            <li className="advantages-list__item">Vulputate placerat amet pulvinar lorem nisl.</li>
-                            <li className="advantages-list__item">Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.</li>
-                            <li className="advantages-list__item">Etiam duis lobortis in fames ultrices commodo nibh.</li>
-                            <li className="advantages-list__item">Tincidunt sagittis neque sem ac eget.</li>
-                            <li className="advantages-list__item">Ultricies amet justo et eget quisque purus vulputate dapibus tortor.</li>
+                            <li className="advantages-list__item list-item">A fermentum in morbi pretium aliquam adipiscing donec tempus.</li>
+                            <li className="advantages-list__item list-item">Vulputate placerat amet pulvinar lorem nisl.</li>
+                            <li className="advantages-list__item list-item">Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.</li>
+                            <li className="advantages-list__item list-item">Etiam duis lobortis in fames ultrices commodo nibh.</li>
+                            <li className="advantages-list__item list-item">Tincidunt sagittis neque sem ac eget.</li>
+                            <li className="advantages-list__item list-item">Ultricies amet justo et eget quisque purus vulputate dapibus tortor.</li>
                         </ul>
                         <NavLink to="/about" className="advantages__button orange-btn">More about us</NavLink>
                     </div>

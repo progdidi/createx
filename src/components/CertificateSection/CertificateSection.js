@@ -1,4 +1,4 @@
-import './cartificateSection.scss';
+import './certificateSection.scss';
 
 //images
 import certificate from './certificate.png';

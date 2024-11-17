@@ -56,6 +56,23 @@ section {
     padding: 80px 0;
 }
 
+//list items
+.list-item {
+    padding-left: 32px;
+    position: relative;
+    color: var(--gray-text);
+    &::before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        content: '';
+        width: 16px;
+        height: 16px;
+        background-image: url('../images/check.svg');
+        background-repeat: no-repeat;
+    }
+}
+
 //tabs
 .tab__btn {
     transition: all 0.3s;
