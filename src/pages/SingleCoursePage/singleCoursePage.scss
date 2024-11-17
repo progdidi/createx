@@ -1,39 +1,76 @@
 .single-course__title {
-    .container {
-    }
+    background-color: var(--pink-color);
+    padding: 120px 0;
+    text-align: center;
     .section-subtitle {
+        color: var(--primary-color);
     }
     .section-title {
+        max-width: 82%;
+        margin: 0 auto;
     }
 }
 
 .course-about {
+    padding-top: 120px;
+    padding-bottom: 114px;
     .course-about__inner {
+        display: flex;
+        justify-content: space-between;
         .course-info {
-            .course-info__title {
+            max-width: 600px;
+            &__title {
+                margin-bottom: 40px;
             }
-            .course-info__descr {
+            &__descr {
+                color: #424551;
+                margin-bottom: 48px;
             }
-            .course-info__subtitle {
+            &__subtitle {
+                font-weight: 700;
+                font-size: 28px;
+                line-height: 150%;
+                color: var(--title-color);
+                margin-bottom: 24px;
             }
-            .course-info__list {
-            }
-            .course-info__list-item {
+            &__list {
+                &-item {
+                    margin-bottom: 4px;
+                }
             }
         }
         
         .course-main {
+            width: 495px;
+            border: 1px solid var(--gray-300);
+            border-radius: 4px;
+            box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.03), 0 12px 10px -6px rgba(154, 156, 165, 0.04), 0 30px 24px -10px rgba(154, 156, 165, 0.05), 0 80px 80px -20px rgba(154, 156, 165, 0.08);
+            padding: 40px 32px;
             .course-main__item {
+                margin-bottom: 32px;
+                &-subtitle {
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 150%;
+                    letter-spacing: 0.07em;
+                    text-transform: uppercase;
+                    color: var(--title-color);
+                    margin-bottom: 4px;
+                }
+                &-title {
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 130%;
+                    color: var(--primary-color);
+                    margin-bottom: 8px;
+                }
+                &-text {
+                    color: #787a80;
+                }
             }
-            .course-main__item-subtitle {
-            }
-            .course-main__item-title {
-            }
-            .course-main__item-text {
-            }
+            
             .course-main__btn {
-            }
-            .orange-btn {
+                width: 100%;
             }
         }
     }
@@ -42,34 +79,68 @@
 
 
 .course-curator {
+    padding-bottom: 180px;
     .course-curator__inner {
+        display: flex;
+        justify-content: space-between;
     }
     .course-curator__img {
+        background-color: var(--yellow-color);
     }
     .course-curator__info {
+        width: 600px;
+        .section-title {
+            margin-bottom: 16px;
+        }
+        .course-curator__job {
+            font-size: 20px;
+            line-height: 150%;
+            color:  #787a80;
+            margin-bottom: 32px;
+        }
+        .course-curator__numbers {
+            margin-bottom: 32px;
+            &-item {
+                display: flex;
+                gap: 8px;
+                align-items: center;
+                font-weight: 700;
+                color:  #424551;
+            }
+            &-img {
+                width: 16px;
+                height: 16px;
+            }
+        }
+        .course-curator__about {
+            color: #424551;
+            margin-bottom: 40px;
+        }
+        .course-curator__social {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            .course-curator__social-item {
+                width: 24px;
+                height: 24px;
+            }
+        }
+        
     }
-    .course-curator__job {
-    }
-    .course-curator__numbers {
-    }
-    .course-curator__numbers-item {
-    }
-    .course-curator__numbers-img {
-    }
-    .course-curator__about {
-    }
-    .course-curator__social {
-    }
-    .course-curator__social-item {
-    }
-    .course-curator__social-link {
-    }
-    .course-curator__social-img {
-    }
+    
 }
 
 .learning-process {
+    .section-subtitle {
+        text-align: center;
+    }
+
+    .section-title {
+        text-align: center;
+        margin-bottom: 60px;
+    }
     .learning-process__inner {
+        display: flex;
     }
     .learning-process__item {
     }
