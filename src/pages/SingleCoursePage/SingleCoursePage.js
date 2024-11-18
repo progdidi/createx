@@ -49,24 +49,24 @@ const SingleCoursePage = () => {
                         </ul>
                     </div>
 
-                    <div className="course-main">
-                        <div className="course-main__item">
-                            <h6 className="course-main__item-subtitle">Dates</h6>
-                            <h5 className="course-main__item-title">Sept 7 – Nov 2</h5>
-                            <p className="course-main__item-text">Metus turpis sit lorem lacus, in elit tellus lacus.</p>
+                    <div className="course-main main-info">
+                        <div className="main-info__item">
+                            <h6 className="main-info__item-subtitle">Dates</h6>
+                            <h5 className="main-info__item-title">Sept 7 – Nov 2</h5>
+                            <p className="main-info__item-text">Metus turpis sit lorem lacus, in elit tellus lacus.</p>
                         </div>
-                        <div className="course-main__item">
-                            <h6 className="course-main__item-subtitle">Duration</h6>
-                            <h5 className="course-main__item-title">2 months – 8 lessons</h5>
-                            <p className="course-main__item-text">Rhoncus pellentesque auctor auctor orci vulputate faucibus quis ut.</p>
+                        <div className="main-info__item">
+                            <h6 className="main-info__item-subtitle">Duration</h6>
+                            <h5 className="main-info__item-title">2 months – 8 lessons</h5>
+                            <p className="main-info__item-text">Rhoncus pellentesque auctor auctor orci vulputate faucibus quis ut.</p>
                         </div>
-                        <div className="course-main__item">
-                            <h6 className="course-main__item-subtitle">Price</h6>
-                            <h5 className="course-main__item-title">$120 per month</h5>
-                            <p className="course-main__item-text">Nulla sem adipiscing adipiscing felis fringilla. Adipiscing mauris quam ac elit tristique dis.</p>
+                        <div className="main-info__item">
+                            <h6 className="main-info__item-subtitle">Price</h6>
+                            <h5 className="main-info__item-title">$120 per month</h5>
+                            <p className="main-info__item-text">Nulla sem adipiscing adipiscing felis fringilla. Adipiscing mauris quam ac elit tristique dis.</p>
                         </div>
 
-                        <button className="course-main__btn orange-btn">Join the course</button>
+                        <button className="main-info__btn orange-btn">Join the course</button>
 
                     </div>
                 </div>
