@@ -131,6 +131,7 @@
 }
 
 .learning-process {
+    padding-bottom: 120px;
     .section-subtitle {
         text-align: center;
     }
@@ -140,73 +141,135 @@
         margin-bottom: 60px;
     }
     .learning-process__inner {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
     }
     .learning-process__item {
-    }
-    .learning-process__item-num {
-    }
-    .learning-process__item-title {
-    }
-    .learning-process__item-descr {
+        width: 100%;
+        &-num {
+            font-weight: 900;
+            font-size: 46px;
+            line-height: 130%;
+            color: #d7dadd;
+            margin-bottom: 16px;
+        }
+
+        &-title {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 150%;
+            color: var(--title-text);
+            margin-bottom: 8px;
+        }
+
+        &-descr {
+            color: #787a80;
+        }
     }
 }
 
 .discount {
     .discount__inner {
+        background-color: var(--pink-color);
+        position: relative;
+        padding: 48px 60px;
     }
     .discount__title {
+        margin-bottom: 32px;
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 130%;
+        color: var(--title-text);
     }
     .discount-timer {
+        position: absolute;
+        top: 48px;
+        right: 60px;
+        display: flex;
+        gap: 24px;
     }
     .discount-timer__item {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 130%;
+        color: var(--title-text);
+        .discount-timer__num {
+            margin-bottom: 4px;
+        }
+        .discount-timer__text {
+            font-size: 12px;
+            line-height: 150%;
+        }
     }
-    .discount-timer__num {
-    }
-    .discount-timer__text {
-    }
+   
     .discount-form {
+        display: flex;
+        width: 100%;
+        gap: 24px;
     }
     .discount-form-label {
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+        line-height: 150%;
+        color:  #424551;
+        margin-bottom: 8px;
     }
     .discount-form__input {
+        padding: 11px 16px;
+        border: 1px solid var(--gray-400);
+        border-radius: 4px;
+        background-color: #fff;
+        &::placeholder {
+            font-size: 14px;
+            line-height: 150%;
+            color: #9a9ca5;
+        }
     }
     .discount-form__btn {
+        
     }
 }
 
 .course-whom {
+    padding-bottom: 120px;
     .course-whom__inner {
+        display: flex;
+        justify-content: space-between;
+        .course-whom {
+            width: 495px;
+        }
     }
     .course-whom__list {
-    }
-    .course-whom__list-item {
+        width: 600px;
+        &-item {
+            margin-bottom: 20px;
+        }
     }
 }
 
 .course-program {
-    .container {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+
+        .course-program__info {
+            width: 600px;
+            .section-title {
+                margin-bottom: 60px;
+            }
+        }
+
+        .course-program__media {
+            padding-top: 70px;
+            &-img {
+                object-fit: cover;
+            }
+
+        }
     }
-    .course-program__info {
-    }
-    .section-subtitle {
-    }
-    .section-title {
-    }
-    .section-program__list {
-    }
-    .section-program__item {
-    }
-    .section-program__item-btn {
-    }
-    .section-program__item-title {
-    }
-    .section-program__item-text {
-    }
-    .course-program__media {
-    }
-    .course-program__media-img {
-    }
+    
 }
 
 .register {
