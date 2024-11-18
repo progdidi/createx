@@ -188,44 +188,26 @@
         right: 60px;
         display: flex;
         gap: 24px;
-    }
-    .discount-timer__item {
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 130%;
-        color: var(--title-text);
-        .discount-timer__num {
-            margin-bottom: 4px;
+        .discount-timer__item {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 130%;
+            color: var(--title-text);
+            .discount-timer__num {
+                margin-bottom: 4px;
+            }
+            .discount-timer__text {
+                font-size: 12px;
+                line-height: 150%;
+            }
         }
-        .discount-timer__text {
-            font-size: 12px;
-            line-height: 150%;
-        }
     }
+    
    
     .discount-form {
         display: flex;
         width: 100%;
         gap: 24px;
-    }
-    .discount-form-label {
-        display: flex;
-        flex-direction: column;
-        font-size: 14px;
-        line-height: 150%;
-        color:  #424551;
-        margin-bottom: 8px;
-    }
-    .discount-form__input {
-        padding: 11px 16px;
-        border: 1px solid var(--gray-400);
-        border-radius: 4px;
-        background-color: #fff;
-        &::placeholder {
-            font-size: 14px;
-            line-height: 150%;
-            color: #9a9ca5;
-        }
     }
     .discount-form__btn {
         
@@ -273,37 +255,71 @@
 }
 
 .register {
+    background-color: #F4F5F6;
+    padding-bottom: 100px;
     .register__inner {
+        display: flex;
+        justify-content: space-between;
+        .register__media {
+            padding-top: 14px;
+            &-img {
+                object-fit: cover;
+            }
+        }
+        .register__info {
+            width: 495px;
+            .section-title {
+                margin-bottom: 40px;
+            }
+            .register-form {
+                .form-label {
+                    margin-bottom: 24px;
+                }
+
+                &__btn {
+                    margin-top: 40px;
+                }
+            }
+        }
     }
-    .register__media {
-    }
-    .register__media-img {
-    }
-    .register__info {
-    }
-    .register-form {
-    }
-    .register-form__label {
-    }
-    .register-form__input {
-    }
-    .register-form__btn {
-    }
-    .orange-btn {
-    }
+    
+    
 }
 
 .other-courses {
+    padding-top: 185px;
+    &__inner {
+        position: relative;
+    }
+    .section-title {
+        margin-bottom: 60px;
+    }
     .courses-slider {
+        .courses-slider__buttons {
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            right: 0;
+            top: 68px;
+        }
+        .courses-slider__items {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin-bottom: 80px;
+        }
     }
-    .courses-slider__buttons {
-    }
-    .courses-slider__items {
-    }
+    
     .other-courses__more {
-    }
-    .other-courses__more-text {
-    }
-    .other-courses__more-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        &-text {
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 150%;
+            color: var(--title-text);
+        }
     }
 }

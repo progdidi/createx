@@ -169,14 +169,14 @@ const SingleCoursePage = () => {
                     </div>
 
                     <form action="" className="discount-form">
-                        <label htmlFor="" className="discount-form-label">Full name
-                            <input type="text" className="discount-form__input" placeholder='Your full name'/>
+                        <label htmlFor="" className="form-label">Full name
+                            <input type="text" className="form-input" placeholder='Your full name'/>
                         </label>
-                        <label htmlFor="" className="discount-form-label">Email
-                            <input type="text" className="discount-form__input" placeholder='Your working email'/>
+                        <label htmlFor="" className="form-label">Email
+                            <input type="text" className="form-input" placeholder='Your working email'/>
                         </label>
-                        <label htmlFor="" className="discount-form-label">Phone
-                            <input type="text" className="discount-form__input" placeholder='Your phone number'/>
+                        <label htmlFor="" className="form-label">Phone
+                            <input type="text" className="form-input" placeholder='Your phone number'/>
                         </label>
                         <button className="discount-form__btn orange-btn">Join the course</button>
                     </form>
@@ -289,14 +289,14 @@ const SingleCoursePage = () => {
                         <h2 className="section-title">Register for the course</h2>
 
                         <form action="" className="register-form">
-                            <label htmlFor="" className="register-form__label">Full Name
-                                <input type="text" className="register-form__input" placeholder='Your full name'/>
+                            <label htmlFor="" className="form-label">Full Name
+                                <input type="text" className="form-input" placeholder='Your full name'/>
                             </label>
-                            <label htmlFor="" className="register-form__label">Email
-                                <input type="text" className="register-form__input" placeholder='Your working email'/>
+                            <label htmlFor="" className="form-label">Email
+                                <input type="text" className="form-input" placeholder='Your working email'/>
                             </label>
-                            <label htmlFor="" className="register-form__label">Phone
-                                <input type="text" className="register-form__input" placeholder='Your phone number'/>
+                            <label htmlFor="" className="form-label">Phone
+                                <input type="text" className="form-input" placeholder='Your phone number'/>
                             </label>
                         
                         <button className="register-form__btn orange-btn">Join the course</button>
@@ -309,24 +309,27 @@ const SingleCoursePage = () => {
 
         <section className="other-courses">
             <div className="container">
-                <h6 className="section-subtitle"></h6>
-                <h2 className="section-title"></h2>
+                <div className="other-courses__inner">
+                    <h6 className="section-subtitle">Check other courses</h6>
+                    <h2 className="section-title">You may also like</h2>
 
-                <div className="courses-slider">
-                    <div className="courses-slider__buttons">
-                        <PrevBtn/>
-                        <NextBtn/>
-                    </div>
-                    <div className="courses-slider__items">
-                        <CourseItem/>
-                        <CourseItem/>
-                    </div>
+                    <div className="courses-slider">
+                        <div className="courses-slider__buttons">
+                            <PrevBtn/>
+                            <NextBtn/>
+                        </div>
+                        <div className="courses-slider__items">
+                            <CourseItem/>
+                            <CourseItem/>
+                        </div>
 
-                    <div className="other-courses__more">
-                        <p className="other-courses__more-text">Do you want more courses?</p>
-                        <button className="other-courses__more-btn orange-btn">View all courses</button>
+                        <div className="other-courses__more">
+                            <p className="other-courses__more-text">Do you want more courses?</p>
+                            <button className="other-courses__more-btn orange-btn">View all courses</button>
+                        </div>
                     </div>
                 </div>
+                
             </div>
         </section>
 
