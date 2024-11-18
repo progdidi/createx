@@ -1,0 +1,42 @@
+.events-page {
+    .section-subtitle {
+        text-align: center;
+    }
+    .section-title {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    .events-filter {
+        width: 100%;
+        display: flex;
+        gap: 40px;
+        align-items: center;
+    }
+    .events-filter__items {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+    }
+    .events-filter__label {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 160%;
+        color: #424551;
+        display: flex;
+        gap: 12px;
+        align-items: center;
+    }
+    .events-filter__select {
+    }
+    .events-filter__option {
+    }
+    .events-layout {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        &__btn {
+        }
+    }
+    .events-list {
+    }
+}
