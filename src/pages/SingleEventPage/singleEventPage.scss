@@ -1,0 +1,146 @@
+
+
+.event-page {
+    .container {
+    }
+    .section-subtitle {
+    }
+    .section-title {
+    }
+}
+
+.event-about {
+    .event-about__info {
+    }
+    .event-program__list {
+    }
+    .details-item {
+    }
+    .details-item__btn {
+    }
+    .details-item__title {
+    }
+    .details-item__text {
+    }
+    .event-main {
+    }
+    .main-info {
+    }
+    .main-info__item {
+    }
+    .main-info__item-subtitle {
+    }
+    .main-info__item-title {
+    }
+    .main-info__item-text {
+    }
+    .event-main__link {
+    }
+    .main-info__btn {
+    }
+    .orange-btn {
+    }
+}
+
+.event-speaker {
+    padding-bottom: 180px;
+    .event-speaker__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    .event-speaker__img {
+        background-color: var(--yellow-color);
+    }
+    .event-speaker__info {
+        width: 600px;
+        .section-title {
+            margin-bottom: 16px;
+        }
+        .event-speaker__job {
+            font-size: 20px;
+            line-height: 150%;
+            color:  #787a80;
+            margin-bottom: 32px;
+        }
+        .event-speaker__numbers {
+            margin-bottom: 32px;
+            &-item {
+                display: flex;
+                gap: 8px;
+                align-items: center;
+                font-weight: 700;
+                color:  #424551;
+            }
+            &-img {
+                width: 16px;
+                height: 16px;
+            }
+        }
+        .event-speaker__about {
+            color: #424551;
+            margin-bottom: 40px;
+        }
+        .event-speaker__social {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            .event-speaker__social-item {
+                width: 24px;
+                height: 24px;
+            }
+        }
+        
+    }
+    
+}
+.course-whom {
+    .course-whom__inner {
+    }
+    .course-whom__title {
+    }
+    .course-whom__list {
+    }
+    .course-whom__list-item {
+    }
+    .list-item {
+    }
+}
+
+.event-subscribe {
+    .event-subscribe__img {
+    }
+    .event-subscribe__info {
+    }
+    .event-subscribe__form {
+    }
+    .event-subscribe__form-input {
+    }
+    .event-subscribe__form-btn {
+    }
+}
+
+.event-request {
+    .event-request__inner {
+    }
+    .event-request__form {
+    }
+    .event-request__form-label {
+    }
+    .form-label {
+    }
+    .event-request__form-input {
+    }
+    .form-input {
+    }
+    .event-request__form-btn {
+    }
+    .event-request__img {
+    }
+}
+
+.other-events {
+}
+.other-events__items {
+}
+.event-preview {
+}
