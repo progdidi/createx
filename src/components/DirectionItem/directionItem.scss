@@ -1,0 +1,25 @@
+.direction-item {
+    border: 1px solid #e5e8ed;
+    border-radius: 4px;
+    width: 390px;
+    .direction-item__info {
+        padding: 24px;
+    }
+    .direction-item__info-title {
+        border-radius: 4px;
+        padding: 1px 8px;
+        background-color: #03CEA4;
+        margin-bottom: 20px;
+        display: inline-block;
+        color: #fff;
+        font-weight: 700;
+    }
+    .direction-item__info-descr {
+        color: #787a80;
+        margin-bottom: 20px;
+    }
+    .direction-item__info-link {
+    }
+    .arrow-link {
+    }
+}

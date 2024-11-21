@@ -1,7 +1,11 @@
 import './aboutPage.scss';
 
+//components
+import DirectionItem from '../../components/DirectionItem/DirectionItem';
+
 //images
 import aboutImg from './images/about.svg';
+import processImg from './images/process.svg';
 import val1 from './images/val1.svg';
 import val2 from './images/val2.svg';
 import val3 from './images/val3.svg';
@@ -51,8 +55,8 @@ const AboutPage = () => {
 
             <section className="values">
                 <div className="container">
-                    <h6 className="section-subtitle"></h6>
-                    <h2 className="section-title"></h2>
+                    <h6 className="section-subtitle">We always stand for</h6>
+                    <h2 className="section-title">Our core values</h2>
 
                     <div className="values__items">
                         <div className="values__item">
@@ -78,6 +82,57 @@ const AboutPage = () => {
                     </div>
                 </div>
             </section>
+
+            <section className="directions">
+                <div className="container">
+                    <h6 className="section-subtitle">our main directions</h6>
+                    <h2 className="section-title">What do we teach</h2>
+
+                    <div className="directions__items">
+                        <DirectionItem/>
+                        <DirectionItem/>
+                        <DirectionItem/>
+                        <DirectionItem/>
+                    </div>
+                </div>
+            </section>
+
+            <div className="about-process">
+                <div className="container">
+                    <div className="about-process__inner">
+                        <div className="about-process__info">
+                            <h6 className="section-subtitle">Studying process</h6>
+                            <h2 className="section-title">That’s how we do it</h2>
+
+                            <div className="about-process__steps">
+                                <div className="about-process__step">
+                                    <p className="about-process__step-subtitle">Step 1</p>
+                                    <h6 className="about-process__step-title"></h6>
+                                    <p className="about-process__step-text"></p>
+                                </div>
+                                <div className="about-process__step">
+                                    <p className="about-process__step-subtitle">Step 2</p>
+                                    <h6 className="about-process__step-title"></h6>
+                                    <p className="about-process__step-text"></p>
+                                </div>
+                                <div className="about-process__step">
+                                    <p className="about-process__step-subtitle">Step 3</p>
+                                    <h6 className="about-process__step-title"></h6>
+                                    <p className="about-process__step-text"></p>
+                                </div>
+                                <div className="about-process__step">
+                                    <p className="about-process__step-subtitle">Step 4</p>
+                                    <h6 className="about-process__step-title"></h6>
+                                    <p className="about-process__step-text"></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="about-process__media"><img src={processImg} alt="" className="about-process__media-img" /></div>
+                        
+                    </div>
+                </div>
+            </div>
         </>
      );
 }

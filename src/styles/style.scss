@@ -56,6 +56,28 @@ section {
     padding: 80px 0;
 }
 
+//arrow-link
+.arrow-link {
+    display: block;
+    position: relative;
+    padding-right: 32px;
+    color: var(--title-text);
+    font-weight: 700;
+    width: fit-content;
+    &::after {
+        position: absolute;
+        content: '';
+        background-image: url('../images/arrow.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        width: 24px;
+        height: 24px;
+    }
+}
+
 //summary
 .details-item {
     margin-bottom: 24px;
