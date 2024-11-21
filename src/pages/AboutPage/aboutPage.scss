@@ -1,23 +1,121 @@
 .about-page {
     .about-page__inner {
         display: flex;
-        .about-page__info {            
-            .section-subtitle {
-            }
+        justify-content: space-between;
+        .about-page__info {
+            width: 600px;
             .section-title {
+                margin-bottom: 48px;
             }
             .about-page__info-text {
-            }
-            .bold {
+                margin-bottom: 60px;
+                color: #424551;
+                &.bold {
+                    font-weight: 700;
+                    color: #1e212c;
+                    margin-bottom: 24px;
+                }
             }
             .about-page__buttons {
-            }
-            .about-page__btn {
+                display: flex;
+                gap: 23px;
+                .about-page__btn {
+                }
             }
         }
-
+            
         .about-page__img {
+            width: 465px;
+            object-fit: cover;
         }
     }
     
+}
+
+.about-numbers {
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .about-numbers__media {
+            .about-numbers__img {
+            }
+        }
+        
+        .about-numbers__list {
+            max-width: 400px;
+            .about-numbers__list-item {
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 150%;
+                color: #1e212c;
+                margin-bottom: 20px;
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                span {
+                    font-weight: 900;
+                    font-size: 48px;
+                    line-height: 130%;
+                    letter-spacing: 0.02em;
+                    color: var(--primary-color);
+                }
+            }
+        }
+        
+    }
+    
+}
+
+.values {
+    .values__items {
+    }
+    .values__item {
+    }
+    .values__item-img {
+    }
+    .values__item-title {
+    }
+    .values__item-descr {
+    }
+}
+
+.directions {
+    .directions__items {
+    }
+}
+
+.about-process {
+    .about-process__inner {
+    }
+    .about-process__info {
+    }
+    .about-process__steps {
+    }
+    .about-process__step {
+    }
+    .about-process__step-subtitle {
+    }
+    .about-process__step-title {
+    }
+    .about-process__step-text {
+    }
+    .about-process__media {
+    }
+    .about-process__media-img {
+    }
+}
+
+.best-tutors {
+    .best-tutors__inner {
+    }
+}
+
+.jobs {
+    .jobs__inner {
+    }
+    .jobs__item {
+    }
+    .jobs__item-img {
+    }
 }

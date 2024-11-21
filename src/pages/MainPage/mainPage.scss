@@ -205,31 +205,5 @@
 
 
 
-.blog {
-    padding-top: 120px;
-    padding-bottom: 180px;    
-    &__inner {
-        position: relative;
-    }
-    .section-title {
-        margin-bottom: 60px;
-    }
-
-    &__btn {
-        display: inline-block;
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-
-    &__items {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 30px;
-    }
-}
-
-
-
 
 

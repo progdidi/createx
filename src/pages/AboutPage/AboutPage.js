@@ -2,14 +2,22 @@ import './aboutPage.scss';
 
 //components
 import DirectionItem from '../../components/DirectionItem/DirectionItem';
+import ReviewsSection from '../../components/ReviewsSection/ReviewsSection';
+import NewsletterSection from '../../components/NewsletterSection/NewsletterSection';
+import TutorItem from '../../components/TutorItem/TutorItem';
+import BlogsSection from '../../components/BlogsSection/BlogsSection';
 
 //images
 import aboutImg from './images/about.svg';
 import processImg from './images/process.svg';
+import numbersImg from './images/numbers.png';
 import val1 from './images/val1.svg';
 import val2 from './images/val2.svg';
 import val3 from './images/val3.svg';
 import val4 from './images/val4.svg';
+
+
+
 
 const AboutPage = () => {
     return ( 
@@ -25,8 +33,8 @@ const AboutPage = () => {
                             <div className="about-page__info-text">We provide relevant approaches to online learning, internships and employment in the largest companies in the country. Our educational programs help you get a new specialty from scratch. During your studies, we will help you find a job. Check the courses and online events that we organise.</div>
 
                             <div className="about-page__buttons">
-                                <button className="about-page__btn">Explore events</button>
-                                <button className="about-page__btn">Browse courses</button>
+                                <button className="about-page__btn orange-btn">Explore events</button>
+                                <button className="about-page__btn orange-btn">Browse courses</button>
                             </div>
                         </div>
                         <img src={aboutImg} alt="" className="about-page__img" />
@@ -39,7 +47,7 @@ const AboutPage = () => {
                     <div className="about-numbers__inner">
                         <div className="about-numbers__media">
                             <video src="">ddf</video>
-                            <img src="" alt="" className="about-numbers__img" />
+                            <img src={numbersImg} alt="" className="about-numbers__img" />
                         </div>
                         
 
@@ -107,22 +115,22 @@ const AboutPage = () => {
                             <div className="about-process__steps">
                                 <div className="about-process__step">
                                     <p className="about-process__step-subtitle">Step 1</p>
-                                    <h6 className="about-process__step-title"></h6>
-                                    <p className="about-process__step-text"></p>
+                                    <h6 className="about-process__step-title">Watching online video lectures</h6>
+                                    <p className="about-process__step-text">Aliquam turpis viverra quam sit interdum blandit posuere pellentesque. Nisl, imperdiet gravida massa neque.</p>
                                 </div>
                                 <div className="about-process__step">
                                     <p className="about-process__step-subtitle">Step 2</p>
-                                    <h6 className="about-process__step-title"></h6>
-                                    <p className="about-process__step-text"></p>
+                                    <h6 className="about-process__step-title">Passing test</h6>
+                                    <p className="about-process__step-text">Aliquam turpis viverra quam sit interdum blandit posuere pellentesque. Nisl, imperdiet gravida massa neque.</p>
                                 </div>
                                 <div className="about-process__step">
                                     <p className="about-process__step-subtitle">Step 3</p>
-                                    <h6 className="about-process__step-title"></h6>
-                                    <p className="about-process__step-text"></p>
+                                    <h6 className="about-process__step-title">Curator’s feedback</h6>
+                                    <p className="about-process__step-text">Aliquam turpis viverra quam sit interdum blandit posuere pellentesque. Nisl, imperdiet gravida massa neque.</p>
                                 </div>
                                 <div className="about-process__step">
                                     <p className="about-process__step-subtitle">Step 4</p>
-                                    <h6 className="about-process__step-title"></h6>
+                                    <h6 className="about-process__step-title">Corrections if needed</h6>
                                     <p className="about-process__step-text"></p>
                                 </div>
                             </div>
@@ -133,6 +141,44 @@ const AboutPage = () => {
                     </div>
                 </div>
             </div>
+
+            <section className="best-tutors">
+                <div className="container">
+                    <h6 className="section-subtitle"></h6>
+                    <h2 className="section-title"></h2>
+
+                    <div className="best-tutors__inner">
+                        <TutorItem/>
+                        <TutorItem/>
+                        <TutorItem/>
+                        <TutorItem/>
+                    </div>
+                </div>
+            </section>
+
+            <ReviewsSection/>
+
+            <section className="jobs">
+                <div className="container">
+                    <h6 className="section-subtitle"></h6>
+                    <h2 className="section-title"></h2>
+
+                    <div className="jobs__inner">
+                        <div className="jobs__item"><img src="" alt="" className="jobs__item-img" /></div>
+                        <div className="jobs__item"><img src="" alt="" className="jobs__item-img" /></div>
+                        <div className="jobs__item"><img src="" alt="" className="jobs__item-img" /></div>
+                        <div className="jobs__item"><img src="" alt="" className="jobs__item-img" /></div>
+                        <div className="jobs__item"><img src="" alt="" className="jobs__item-img" /></div>
+                        <div className="jobs__item"><img src="" alt="" className="jobs__item-img" /></div>
+                        <div className="jobs__item"><img src="" alt="" className="jobs__item-img" /></div>
+                        <div className="jobs__item"><img src="" alt="" className="jobs__item-img" /></div>
+                    </div>
+                </div>
+            </section>
+
+            <BlogsSection/>
+
+            <NewsletterSection/>
         </>
      );
 }

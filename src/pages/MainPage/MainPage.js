@@ -14,12 +14,12 @@ import btn4 from './images/benefits/btn4.svg';
 import CourseItem from '../../components/CourseItem/CourseItem';
 import EventItem from '../../components/EventItem/EventItem';
 import TutorItem from '../../components/TutorItem/TutorItem';
-import BlogItem from '../../components/BlogItem/BlogItem';
 import NextBtn from '../../components/NextBtn/NextBtn';
 import PrevBtn from '../../components/PrevBtn/PrevBtn';
 import ReviewsSection from '../../components/ReviewsSection/ReviewsSection';
 import NewsletterSection from '../../components/NewsletterSection/NewsletterSection';
 import CertificateSection from '../../components/CertificateSection/CertificateSection';
+import BlogsSection from '../../components/BlogsSection/BlogsSection';
 
 
 const MainPage = () => {
@@ -176,23 +176,7 @@ const MainPage = () => {
 
         <ReviewsSection/>
 
-        <section className="blog">
-            <div className="container">
-                <div className="blog__inner">
-                    <h6 className="section-subtitle">Our blog</h6>
-                    <h2 className="section-title">Latest posts</h2>
-
-                    <a href="" className="blog__btn orange-btn">Go to blog</a>
-
-                    <div className="blog__items">
-                        <BlogItem/>
-                        <BlogItem/>
-                        <BlogItem/>
-                    </div>
-                </div>
-                
-            </div>
-        </section>
+        <BlogsSection/>
 
         <NewsletterSection/>
 
