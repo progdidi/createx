@@ -14,6 +14,7 @@ import btn4 from './images/benefits/btn4.svg';
 import CourseItem from '../../components/CourseItem/CourseItem';
 import {courses} from '../../helpers/courses/courses';
 import EventItem from '../../components/EventItem/EventItem';
+import { events } from '../../helpers/events';
 import TutorItem from '../../components/TutorItem/TutorItem';
 import NextBtn from '../../components/NextBtn/NextBtn';
 import PrevBtn from '../../components/PrevBtn/PrevBtn';
@@ -149,14 +150,25 @@ const MainPage = () => {
                 <h2 className="section-title">Lectures & workshops</h2>
 
                 <div className="events__list">
-                    <EventItem/>
-                    <EventItem/>
-                    <EventItem/>
+
+                    {events.map((event) => {
+                        return (
+                            <EventItem
+                                date={event.date}
+                                month={event.month}
+                                start={event.start}
+                                end={event.end}
+                                title={event.title}
+                                category={event.category}
+                                key={event.id}
+                            />
+                        )
+                    })}
                 </div>
 
                 <div className="events__link">
                     <p className="events__link-text">Do you want more?</p>
-                    <a href="" className="events__link-btn orange-btn">Explore all events</a>
+                    <NavLink to="/events" className="events__link-btn orange-btn">Explore all events</NavLink>
                 </div>
             </div>
         </section>

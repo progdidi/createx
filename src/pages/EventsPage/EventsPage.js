@@ -3,6 +3,7 @@ import './eventsPage.scss';
 //components
 import NewsletterSection from '../../components/NewsletterSection/NewsletterSection';
 import EventItem from '../../components/EventItem/EventItem';
+import { events } from '../../helpers/events';
 import SearchForm from '../../components/SearchForm/SearchForm';
 
 //images
@@ -55,12 +56,21 @@ const EventsPage = () => {
                     </div>
                 </div>
 
-                <div className="events-list">                    
-                    <EventItem/>
-                    <EventItem/>
-                    <EventItem/>
-                    <EventItem/>
-                    <EventItem/>
+                <div className="events-list">    
+
+                    {events.map((event) => {
+                        return (
+                            <EventItem
+                                date={event.date}
+                                month={event.month}
+                                start={event.start}
+                                end={event.end}
+                                title={event.title}
+                                category={event.category}
+                                key={event.id}
+                            />
+                        )
+                    })}
                 </div>
             </div>
         </section>

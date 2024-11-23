@@ -2,6 +2,7 @@ import './coursesPage.scss';
 
 //components
 import CourseItem from '../../components/CourseItem/CourseItem';
+import { courses } from '../../helpers/courses/courses';
 import SearchForm from '../../components/SearchForm/SearchForm';
 import ReviewsSection from '../../components/ReviewsSection/ReviewsSection';
 
@@ -44,12 +45,18 @@ const CoursesPage = () => {
                     <SearchForm/>
 
                     <div className="courses-page__items">
-                        <CourseItem/>
-                        <CourseItem/>
-                        <CourseItem/>
-                        <CourseItem/>
-                        <CourseItem/>
-                        <CourseItem/>
+                        {courses.map((course) => {
+                        return (
+                            <CourseItem
+                                title={course.title}
+                                img={course.img}
+                                category={course.category}
+                                price={course.price}
+                                tutor={course.tutor}
+                                key={course.id}
+                            />
+                        )
+                    })}
                     </div>
 
                     <button className="courses-page__load-btn">

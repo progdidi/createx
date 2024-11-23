@@ -1,18 +1,19 @@
 import './eventItem.scss';
+import { NavLink } from 'react-router-dom';
 
-const EventItem = ({day, month, time, title, descr, link}) => {
+const EventItem = ({date, month, start, end, title, category}) => {
     return ( 
         <div className="event-item">
-            <p className="event-item__date">05</p>
+            <p className="event-item__date">{date}</p>
             <div className="event-item__details">
-                <h6 className="item-title">August </h6>
-                <p className="event-item__text">11:00 – 14:00</p>
+                <h6 className="item-title">{month} </h6>
+                <p className="event-item__text">{start} – {end}</p>
             </div>
             <div className="event-item__info">
-                <h6 className="item-title">Formation of the organizational structure of the company in the face of uncertainty.</h6>
-                <p className="event-item__text">Onine master-class</p>
+                <h6 className="item-title">{title}</h6>
+                <p className="event-item__text">{category}</p>
             </div>
-            <a href="" className="event-item__link orange-btn">View more</a>
+            <NavLink to="/event" className="event-item__link orange-btn">View more</NavLink>
         </div>
      );
 }
