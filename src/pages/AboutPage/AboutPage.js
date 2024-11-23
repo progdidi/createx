@@ -105,7 +105,7 @@ const AboutPage = () => {
                 </div>
             </section>
 
-            <div className="about-process">
+            <section className="about-process">
                 <div className="container">
                     <div className="about-process__inner">
                         <div className="about-process__info">
@@ -131,7 +131,7 @@ const AboutPage = () => {
                                 <div className="about-process__step">
                                     <p className="about-process__step-subtitle">Step 4</p>
                                     <h6 className="about-process__step-title">Corrections if needed</h6>
-                                    <p className="about-process__step-text"></p>
+                                    <p className="about-process__step-text">Non tempor pulvinar tincidunt aliquam. Placerat ultricies malesuada dui auctor.</p>
                                 </div>
                             </div>
                         </div>
@@ -140,7 +140,7 @@ const AboutPage = () => {
                         
                     </div>
                 </div>
-            </div>
+            </section>
 
             <section className="best-tutors">
                 <div className="container">

@@ -68,46 +68,112 @@
 }
 
 .values {
+    .section-subtitle {
+        text-align: center;
+    }
+
+    .section-title {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
     .values__items {
+        display: flex;
+        justify-content: space-between;
+
     }
     .values__item {
-    }
-    .values__item-img {
-    }
-    .values__item-title {
-    }
-    .values__item-descr {
+        width: 240px;
+        text-align: center;
+        &-img {
+            width: 48px;
+            height: 48px;
+            margin: 0 auto;
+            margin-bottom: 24px;
+        }
+
+        &-title {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 150%;
+            text-align: center;
+            color: #1e212c;
+            margin-bottom: 8px;
+        }
+
+        &-descr {
+            color:  #787a80;
+        }
     }
 }
 
 .directions {
+    .section-subtitle {
+        text-align: center;
+    }
+
+    .section-title {
+        text-align: center;
+        margin-bottom: 60px;
+    }
     .directions__items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
     }
 }
 
 .about-process {
     .about-process__inner {
+        display: flex;
+        justify-content: space-between;
+        .about-process__info {
+            width: 495px;
+            .section-title {
+                margin-bottom: 60px;
+            }
+            .about-process__steps {
+            }
+            .about-process__step {
+                margin-bottom: 32px;
+                &-subtitle {
+                    font-weight: 900;
+                    font-size: 12px;
+                    line-height: 150%;
+                    color:  #787a80;
+                }
+
+                &-title {
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 150%;
+                    color: var(--title-text);
+                    margin-bottom: 8px;
+                }
+                &-text {
+                    color: #787a80;
+                }
+            }
+            
+        }
+        
+
+        .about-process__media {
+            .about-process__media-img {
+            }
+        }
     }
-    .about-process__info {
-    }
-    .about-process__steps {
-    }
-    .about-process__step {
-    }
-    .about-process__step-subtitle {
-    }
-    .about-process__step-title {
-    }
-    .about-process__step-text {
-    }
-    .about-process__media {
-    }
-    .about-process__media-img {
-    }
+    
+    
+    
 }
 
 .best-tutors {
     .best-tutors__inner {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 60px;
     }
 }
 
