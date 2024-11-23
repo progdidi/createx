@@ -48,6 +48,18 @@
 
             &-descr {
                 color: var(--title-text);
+            }            
+            position: relative;
+            &::after {
+                position: absolute;
+                content: '';
+                width: 8px;
+                height: 8px;
+                background-color: var(--primary-color);
+                border-radius: 50%;
+                top: 50%;
+                transform: translateY(-50%);
+                right: -30%;
             }
         }
     }
@@ -87,6 +99,9 @@
 }
 
 .featured {
+    .section-title {
+        margin-bottom: 60px;
+    }
     padding: 90px 0;
     &__items {
         display: grid;

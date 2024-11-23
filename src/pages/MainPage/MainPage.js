@@ -12,6 +12,7 @@ import btn4 from './images/benefits/btn4.svg';
 
 //components
 import CourseItem from '../../components/CourseItem/CourseItem';
+import {courses} from '../../helpers/courses/courses';
 import EventItem from '../../components/EventItem/EventItem';
 import TutorItem from '../../components/TutorItem/TutorItem';
 import NextBtn from '../../components/NextBtn/NextBtn';
@@ -88,9 +89,21 @@ const MainPage = () => {
                 <h6 className="section-subtitle">Ready to learn?</h6>
                 <h2 className="section-title">Featured Courses</h2>
 
+                <NavLink to="/courses" className="featured__link orange-btn">View all courses</NavLink>
+
                 <div className="featured__items">
-                    <CourseItem></CourseItem>
-                    <CourseItem></CourseItem>
+                    {courses.map((course) => {
+                        return (
+                            <CourseItem
+                                title={course.title}
+                                img={course.img}
+                                category={course.category}
+                                price={course.price}
+                                tutor={course.tutor}
+                                key={course.id}
+                            />
+                        )
+                    })}
                 </div>
             </div>
         </section>

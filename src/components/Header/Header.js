@@ -1,7 +1,11 @@
 import { NavLink } from 'react-router-dom';
 
-import logo from './logo.svg';
 import './header.scss';
+
+//images
+import logo from './logo.svg';
+import user from './user.svg';
+
 
 //components
 import SignInForm from './SignInForm/SignInForm';
@@ -25,7 +29,9 @@ const Header = () => {
 
                     <div className="header__buttons">
                         <button className="header__btn orange-btn">Get consultation</button>
-                        <button className="header__btn">Log in / Register</button>
+                        <button className="header__btn">
+                            <img src={user} alt="" className="header__btn-img" />
+                            Log in / Register</button>
                     </div>
                 </div>
 

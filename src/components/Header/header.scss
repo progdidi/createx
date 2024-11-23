@@ -7,6 +7,8 @@
         align-items: center;
         gap: 60px;
         justify-content: flex-start;
+        font-weight: 700;
+        color: var(--gray-800);
     }
     .logo {
     }
@@ -31,6 +33,13 @@
         margin-left: auto;
     }
     .header__btn {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        &-img {
+            width: 20px;
+            height: 20px;
+        }
     }
 }
 
