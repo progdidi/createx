@@ -3,6 +3,9 @@ import { NavLink } from 'react-router-dom';
 import logo from './logo.svg';
 import './header.scss';
 
+//components
+import SignInForm from './SignInForm/SignInForm';
+
 const Header = () => {
     return ( 
         <header className="header">
@@ -25,6 +28,8 @@ const Header = () => {
                         <button className="header__btn">Log in / Register</button>
                     </div>
                 </div>
+
+                <SignInForm/>
             </div>
         </header>
      );
