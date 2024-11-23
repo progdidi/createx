@@ -1,0 +1,66 @@
+.contacts-page {        
+    .contacts-page__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .contacts-page__info {
+        width: 395px;
+    }
+    .section-subtitle {
+    }
+    .section-title {
+    }
+    .contacts__list {
+    }
+    .contacts-item {
+    }
+    .contacts-item__img {
+    }
+    .contacts-item__text {
+    }
+    .contacts-item__link {
+    }
+    .contacts-social {
+    }
+    .contacts-social__link {
+    }
+    .contacts-social__img {
+    }
+    .contacts-page__map {
+    }
+}
+
+
+.contacts-feedback { 
+    padding-bottom: 180px;   
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .contacts-feedback__img {
+        }
+        .contacts-feedback__info {
+            width: 705px;
+            .section-title {
+                margin-bottom: 40px;
+            }
+            .contacts-feedback__form {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .form-label {
+            }
+            .form-input {
+            }
+            .form-text {
+            }
+            .contacts-feedback__form-btn {
+            }
+            .orange-btn {
+            }
+        }
+    }
+    
+    
+}
