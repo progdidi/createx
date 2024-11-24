@@ -1,0 +1,10 @@
+.play-btn {
+    width: 52px;
+    height: 52px;
+    background: var(--orange-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    outline: 10px solid var(--primary-color);
+}

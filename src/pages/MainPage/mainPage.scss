@@ -8,6 +8,18 @@
         margin-bottom: 190px;
         .promo-info {
             max-width: 500px;
+            .promo-video {
+                display: flex;
+                align-items: center;
+                margin-bottom: 24px;
+                gap: 10px;
+                &__text {
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 150%;
+                    color: var(--gray-900);
+                }
+            }
             .promo-info__title {
                 font-weight: 900;
                 font-size: 64px;

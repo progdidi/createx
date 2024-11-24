@@ -22,6 +22,7 @@ import ReviewsSection from '../../components/ReviewsSection/ReviewsSection';
 import NewsletterSection from '../../components/NewsletterSection/NewsletterSection';
 import CertificateSection from '../../components/CertificateSection/CertificateSection';
 import BlogsSection from '../../components/BlogsSection/BlogsSection';
+import PlayButton from '../../components/PlayButton/PlayButton';
 
 
 const MainPage = () => {
@@ -31,9 +32,13 @@ const MainPage = () => {
             <div className="container">
                 <div className="promo__inner">
                     <div className="promo-info">
+                        <div className="promo-video">
+                            <PlayButton/> 
+                            <p className="promo-video__text">Play showreel</p>
+                        </div>
                         <h1 className="promo-info__title">Enjoy studying with Createx Online Courses</h1>
                         <div className="promo-info__buttons">
-                            <button className="promo-info__btn orange-btn">About us</button>
+                            <button className="promo-info__btn main-btn">About us</button>
                             <button className="promo-info__btn orange-btn">Explore courses</button>
                         </div>
                     </div>
