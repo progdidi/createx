@@ -1,6 +1,7 @@
 .blog-item {  
     max-width: 390px;  
     position: relative;
+    transition: all 0.3s;
     .blog-item__type {
         border-radius: 4px;
         padding: 1px 8px;
@@ -76,6 +77,10 @@
                 
             }
         }
+    }
+
+    &:hover {
+        transform: scale(1.05);
     }
     
 }

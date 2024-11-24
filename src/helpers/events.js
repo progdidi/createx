@@ -3,8 +3,8 @@ const events = [
         id: 1,
         date: 5,
         month: 'February',
-        start: 10,
-        end: 11,
+        start: '10:00',
+        end: '11:00',
         title: 'Building a customer service department. Best Practices.',
         category: 'Onine lecture'
     }, 
@@ -13,8 +13,8 @@ const events = [
         id: 2,
         date: 5,
         month: 'February',
-        start: 10,
-        end: 11,
+        start: '10:00',
+        end: '11:00',
         title: 'Building a customer service department. Best Practices.',
         category: 'Onine lecture'
     }, 
@@ -23,8 +23,8 @@ const events = [
         id: 3,
         date: 5,
         month: 'February',
-        start: 10,
-        end: 11,
+        start: '10:00',
+        end: '11:00',
         title: 'Building a customer service department. Best Practices.',
         category: 'Onine lecture'
     },
@@ -33,8 +33,8 @@ const events = [
         id: 4,
         date: 5,
         month: 'February',
-        start: 10,
-        end: 11,
+        start: '10:00',
+        end: '11:00',
         title: 'Building a customer service department. Best Practices.',
         category: 'Onine lecture'
     },
@@ -43,8 +43,8 @@ const events = [
         id: 5,
         date: 5,
         month: 'February',
-        start: 10,
-        end: 11,
+        start: '10:00',
+        end: '11:00',
         title: 'Building a customer service department. Best Practices.',
         category: 'Onine lecture'
     }

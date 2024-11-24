@@ -9,7 +9,7 @@ const NewsletterSection = () => {
                     <h2 className="section-title">Subscribe to the Createx School announcements</h2>
 
                     <form action="" className="newsletter-form">
-                        <input type="mail" className="newsletter-form__input" placeholder='Your working email'/>
+                        <input type="email" className="newsletter-form__input" placeholder='Your working email'/>
                         <button className="newsletter-form__btn orange-btn">Subscribe</button>
                     </form>
                 </div>

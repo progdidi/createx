@@ -2,13 +2,12 @@
     background-color: #fff;
     padding: 64px 105px;
     border-radius: 4px;
+    width: 1020px;
+    margin: 0 auto;
     box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.03), 0 12px 10px -6px rgba(154, 156, 165, 0.04), 0 30px 24px -10px rgba(154, 156, 165, 0.05), 0 80px 80px -20px rgba(154, 156, 165, 0.08);
-    &__text {
+    &__content {
         padding-left: 58px;
         position: relative;
-        font-size: 20px;
-        line-height: 150%;
-        margin-bottom: 24px;
         &::before {
             position: absolute;
             left: 0;
@@ -19,21 +18,31 @@
             width: 28px;
             height: 20px;
         }
-
+    }
+    &__text {
+        font-size: 20px;
+        line-height: 150%;
+        margin-bottom: 24px;
     }
 
     &__author {
         display: flex;
+        gap: 20px;
+        align-items: center;
         &-img {
             width: 72px;
             height: 72px;
         }
         &-name {
-
+            font-weight: 700;
+            color: var(--gray-900);
+            margin-bottom: 4px;
         }
 
         &-course {
-
+            font-size: 14px;
+            line-height: 150%;
+            color: var(--gray-700);
         }
     }
 }

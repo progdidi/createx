@@ -16,6 +16,7 @@ import {courses} from '../../helpers/courses/courses';
 import EventItem from '../../components/EventItem/EventItem';
 import { events } from '../../helpers/events';
 import TutorItem from '../../components/TutorItem/TutorItem';
+import {tutors} from '../../helpers/courses/tutors/tutors';
 import NextBtn from '../../components/NextBtn/NextBtn';
 import PrevBtn from '../../components/PrevBtn/PrevBtn';
 import ReviewsSection from '../../components/ReviewsSection/ReviewsSection';
@@ -92,10 +93,18 @@ const MainPage = () => {
 
         <section className="featured">
             <div className="container">
-                <h6 className="section-subtitle">Ready to learn?</h6>
-                <h2 className="section-title">Featured Courses</h2>
+                <div className="section-top">
+                    <div>
+                        <h6 className="section-subtitle">Ready to learn?</h6>
+                        <h2 className="section-title">Featured Courses</h2>
+                    </div>
 
-                <NavLink to="/courses" className="featured__link orange-btn">View all courses</NavLink>
+                    <NavLink to="/courses" className="featured__link main-btn">View all courses</NavLink>
+                    
+                </div>
+                
+
+                
 
                 <div className="featured__items">
                     {courses.map((course) => {
@@ -188,10 +197,22 @@ const MainPage = () => {
 
                     <div className="team-slider">
                         <div className="team__items">
-                            <TutorItem/>
-                            <TutorItem/>
-                            <TutorItem/>
-                            <TutorItem/>
+
+                            {tutors.slice(0, 4).map((tutor) => {
+                                return (
+                                    <TutorItem
+                                        name={tutor.name}
+                                        img={tutor.img}
+                                        job={tutor.job}
+                                        fbLink={tutor.fbLink}
+                                        instLink={tutor.instLink}
+                                        linkedinLink={tutor.linkedinLink}
+                                        key={tutor.id}
+                                    />
+                                )
+                            })}
+
+
                         </div>
 
                         <div className="slider__buttons team-slider__buttons">

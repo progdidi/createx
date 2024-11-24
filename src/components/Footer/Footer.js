@@ -1,6 +1,7 @@
 import './footer.scss';
 
 import logo from './logo.svg';
+import arr from './arrow.svg';
 import SocialList from './SocialList/SocialList';
 
 const Footer = () => {
@@ -38,7 +39,13 @@ const Footer = () => {
 
                     <div className="footer-newsletter">
                         <h6 className="footer__title">SIGN UP TO OUR NEWSLETTER</h6>
-                        <input type="text" />
+                        <form action="" className="footer-newsletter__form">
+                            <input type="text" className="footer-newsletter__form-input" placeholder='Email address'/>
+                            <button className="footer-newsletter__form-btn">
+                                <img src={arr} alt="" className="footer-newsletter__form-img" />
+                            </button>
+                        </form>
+                        
 
                         <p className="footer-newsletter__descr">*Subscribe to our newsletter to receive communications and early updates from Createx SEO Agency.</p>
                     </div>

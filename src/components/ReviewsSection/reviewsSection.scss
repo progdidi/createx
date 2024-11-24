@@ -7,7 +7,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        max-width: 1020px;
         margin: 0 auto;
         .section-title {
             margin-bottom: 60px;
@@ -17,16 +16,20 @@
 
     .reviews-slider {
         position: relative;
+        width: 100%;
         .reviews-slider__buttons {
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
             justify-content: space-between;
             width: 100%;
+            left: 0;
+            right: 0;
         }
 
         .reviews__items {
             margin-bottom: 60px;
+            width: 100%;
         }
     
         .reviews__buttons {

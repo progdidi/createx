@@ -1,8 +1,9 @@
 import './courseItem.scss';
+import { NavLink } from 'react-router-dom';
 
 const CourseItem = ({img, category, title, price, tutor}) => {
     return ( 
-        <div className="course-item">
+        <NavLink to='/course' className="course-item">
             <img src={img} alt="" className="course-item__img" />
             <div className="course-item__info">
                 <p className="course-item__tag">{category}</p>
@@ -12,7 +13,7 @@ const CourseItem = ({img, category, title, price, tutor}) => {
                     <p className="course-item__author">by {tutor}</p>
                 </div>
             </div>
-        </div>
+        </NavLink>
      );
 }
  
