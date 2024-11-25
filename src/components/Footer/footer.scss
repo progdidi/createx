@@ -79,6 +79,26 @@
         }
     }
     
-    .footer__bottom {
+    .footer__bottom {        
+        padding-top: 18px;
+        padding-bottom: 19px;
+        background-color: rgba(255, 255, 255, 0.05);
+        &-inner {
+            display: flex;
+            align-items: center;
+            .go-top__btn {
+                margin-left: auto;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 150%;
+                color: var(--white);
+                opacity: 0.5;
+                transition: all 0.2s;
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+       
     }
 }

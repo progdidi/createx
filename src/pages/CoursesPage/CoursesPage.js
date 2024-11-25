@@ -22,22 +22,28 @@ const CoursesPage = () => {
 
                 <div className="courses-page__inner">
                     <div className="courses-categories">
-                        <button className="courses-categories__btn tab__btn active">All
+                        <button className="courses-categories__btn tab__btn active">
+                            <p className="courses-categories__btn-text">All</p> 
                             <p className="courses-categories__btn-num">1</p>
                         </button>
-                        <button className="courses-categories__btn tab__btn">Marketing
+                        <button className="courses-categories__btn tab__btn">
+                            <p className="courses-categories__btn-text">Marketing</p> 
                             <p className="courses-categories__btn-num">2</p>
                         </button>
-                        <button className="courses-categories__btn tab__btn">Management
+                        <button className="courses-categories__btn tab__btn">
+                            <p className="courses-categories__btn-text">Management</p> 
                             <p className="courses-categories__btn-num">10</p>
                         </button>
-                        <button className="courses-categories__btn tab__btn">HR & Recruting
+                        <button className="courses-categories__btn tab__btn">
+                            <p className="courses-categories__btn-text">HR & Recruting</p> 
                             <p className="courses-categories__btn-num">5</p>
                         </button>
-                        <button className="courses-categories__btn tab__btn">Design
+                        <button className="courses-categories__btn tab__btn">
+                            <p className="courses-categories__btn-text">Design</p> 
                             <p className="courses-categories__btn-num">1</p>
                         </button>
-                        <button className="courses-categories__btn tab__btn">Development
+                        <button className="courses-categories__btn tab__btn">
+                            <p className="courses-categories__btn-text">Development</p> 
                             <p className="courses-categories__btn-num">3</p>
                         </button>
                     </div>
