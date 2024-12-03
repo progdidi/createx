@@ -10,6 +10,7 @@ import request from './request.svg';
 //components
 import EventItem from '../../components/EventItem/EventItem';
 import { events } from '../../helpers/events';
+import NewsletterDiv from '../../components/NewsletterDiv/NewsletterDiv';
 
 //brands images
 import br1 from './brands/br1.svg';
@@ -147,20 +148,7 @@ const SingleEventPage = () => {
                 </div>
             </section>
 
-            <section className="event-subscribe">
-                <div className="container">
-                    <img src="" alt="" className="event-subscribe__img" />
-                    <div className="event-subscribe__info">
-                        <h2 className="section-title">Don’t want to miss the best events? Subscribe to our newsletter!</h2>
-                        <form action="" className="event-subscribe__form">
-                            <input type="text" className="event-subscribe__form-input" />
-                                <button className="event-subscribe__form-btn orange-btn">Subscribe</button>
-                            <input type="checkbox" className="event-subscribe__form-input" />
-                            
-                            </form>
-                    </div>
-                </div>
-            </section>
+            <NewsletterDiv/>
 
             <section className="event-request">
                 <div className="container">
@@ -169,17 +157,18 @@ const SingleEventPage = () => {
                             <h6 className="section-subtitle">Don’t miss the event</h6>
                             <h2 className="section-title">Leave a request</h2>
 
-                            <label htmlFor="" className="event-request__form-label form-label">
-                                <input type="text" className="event-request__form-input form-input" />
+                            <label htmlFor="" className="event-request__form-label form-label">Full Name
+                                <input type="text" className="event-request__form-input form-input" placeholder='Your full name'/>
                             </label>
-                            <label htmlFor="" className="event-request__form-label form-label">
-                                <input type="text" className="event-request__form-input form-input" />
+                            <label htmlFor="" className="event-request__form-label form-label">Email
+                                <input type="text" className="event-request__form-input form-input" placeholder='Your working email'/>
                             </label>
-                            <label htmlFor="" className="event-request__form-label form-label">
-                                <input type="text" className="event-request__form-input form-input" />
+                            <label htmlFor="" className="event-request__form-label form-label">Phone
+                                <input type="text" className="event-request__form-input form-input" placeholder='Your phone number'/>
                             </label>
 
-                            <button className="event-request__form-btn orange-btn"></button>
+                            <button className="event-request__form-btn orange-btn">Join the event</button>
+                            <p className="event-request__form-text">* You will receive a link to the online lecture in an email after registration.</p>
                         </form>
                         <img src={request} alt="" className="event-request__img" />
                     </div>

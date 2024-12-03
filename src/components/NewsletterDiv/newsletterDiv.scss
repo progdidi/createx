@@ -1,0 +1,39 @@
+.newsletter-div {
+    .container {
+    }
+    .newsletter-div__content {
+        background-color: var(--pink-color);
+        padding: 60px 103px;
+        border-radius: 4px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .newsletter-div__img {
+    }
+    .newsletter-div__info {
+        width: 600px;
+        .newsletter-div__title {
+            font-weight: 900;
+            font-size: 32px;
+            line-height: 130%;
+            color: var(--gray-900);
+            margin-bottom: 48px;
+        }
+        .newsletter-div__form {
+            gap: 24px;
+        }
+        .newsletter-div__form-input {
+            width: 432px;
+        }
+        .newsletter-div__form-btn {
+            width: 154px;
+        }
+        .orange-btn {
+        }
+        .newsletter-div__form-check {
+            display: block;
+            margin-top: 24px;
+        }
+    }
+    
+}
