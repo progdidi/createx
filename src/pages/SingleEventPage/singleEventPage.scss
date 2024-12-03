@@ -10,7 +10,17 @@
 }
 
 .event-about {
+    &__inner {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+    }
     .event-about__info {
+        max-width: 601px;
+        .section-title {
+            margin-bottom: 40px;
+        }
     }
     .event-program__list {
     }
@@ -80,6 +90,12 @@
             color: #424551;
             margin-bottom: 40px;
         }
+        .event-speaker__brands {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
         .event-speaker__social {
             display: flex;
             align-items: center;
@@ -121,8 +137,11 @@
 
 .event-request {
     .event-request__inner {
+        display: flex;
+        justify-content: space-between;
     }
     .event-request__form {
+        max-width: 505px;
     }
     .event-request__form-label {
     }

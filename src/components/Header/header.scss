@@ -21,6 +21,10 @@
             gap: 40px;
         }
         .menu__list-item {
+            transition: all 0.2s;
+            &:hover {
+                color: var(--primary-color);
+            }
         }
         .menu__list-link {
         }

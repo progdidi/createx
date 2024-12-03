@@ -72,6 +72,13 @@ const EventsPage = () => {
                         )
                     })}
                 </div>
+
+                <div className="events-padination">
+                    <button className="events-padination__btn">1</button>
+                    <button className="events-padination__btn">2</button>
+                    <button className="events-padination__btn">3</button>
+                    <button className="events-padination__btn">4</button>
+                </div>
             </div>
         </section>
 

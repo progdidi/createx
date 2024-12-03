@@ -3,6 +3,7 @@ import './singleCoursePage.scss';
 //components
 import ReviewsSection from '../../components/ReviewsSection/ReviewsSection';
 import CourseItem from '../../components/CourseItem/CourseItem';
+import { courses } from '../../helpers/courses/courses';
 
 //images
 import example from './example.png';
@@ -319,8 +320,18 @@ const SingleCoursePage = () => {
                             <NextBtn/>
                         </div>
                         <div className="courses-slider__items">
-                            <CourseItem/>
-                            <CourseItem/>
+                        {courses.map((course) => {
+                            return (
+                                <CourseItem
+                                    title={course.title}
+                                    img={course.img}
+                                    category={course.category}
+                                    price={course.price}
+                                    tutor={course.tutor}
+                                    key={course.id}
+                                />
+                            )
+                        })}
                         </div>
 
                         <div className="other-courses__more">

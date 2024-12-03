@@ -5,8 +5,13 @@ import facebook from '../../images/social/facebook.svg';
 import linkedin from '../../images/social/linkedin.svg';
 import twitter from '../../images/social/twitter.svg';
 import instagram from '../../images/social/instagram.svg';
+import request from './request.svg';
 
-//brands
+//components
+import EventItem from '../../components/EventItem/EventItem';
+import { events } from '../../helpers/events';
+
+//brands images
 import br1 from './brands/br1.svg';
 import br2 from './brands/br2.svg';
 import br3 from './brands/br3.svg';
@@ -23,58 +28,63 @@ const SingleEventPage = () => {
             </section>
 
             <section className="event-about">
-                <div className="event-about__info">
-                    <h2 className="section-title">We will talk about:</h2>
+                <div className="container">
+                    <div className="event-about__inner">
+                        <div className="event-about__info">
+                        <h2 className="section-title">We will talk about:</h2>
 
-                    <div className="event-program__list">
-                        <div className="details-item">
-                            <button className="details-item__btn">+
-                                <h6 className="details-item__title"><span>Theme 1.</span> Aliquet lectus urna viverra in odio.</h6>
-                            </button>
-                            <p className="details-item__text">Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</p>
+                        <div className="event-program__list">
+                            <div className="details-item">
+                                <button className="details-item__btn">+
+                                    <h6 className="details-item__title"><span>Theme 1.</span> Aliquet lectus urna viverra in odio.</h6>
+                                </button>
+                                <p className="details-item__text">Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</p>
+                            </div>
+
+                            <div className="details-item">
+                                <button className="details-item__btn">+
+                                    <h6 className="details-item__title"><span>Theme 2.</span> Aliquet lectus urna viverra in odio.</h6>
+                                </button>
+                                <p className="details-item__text">Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</p>
+                            </div>
+
+                            <div className="details-item">
+                                <button className="details-item__btn">+
+                                    <h6 className="details-item__title"><span>Theme 3.</span> Aliquet lectus urna viverra in odio.</h6>
+                                </button>
+                                <p className="details-item__text">Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</p>
+                            </div>
+
+                            <div className="details-item">
+                                <button className="details-item__btn">+
+                                    <h6 className="details-item__title"><span>Theme 4.</span> Aliquet lectus urna viverra in odio.</h6>
+                                </button>
+                                <p className="details-item__text">Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</p>
+                            </div>
+
+                            </div>
                         </div>
 
-                        <div className="details-item">
-                            <button className="details-item__btn">+
-                                <h6 className="details-item__title"><span>Theme 2.</span> Aliquet lectus urna viverra in odio.</h6>
-                            </button>
-                            <p className="details-item__text">Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</p>
-                        </div>
+                        <div className="event-main main-info">
+                            <div className="main-info__item">
+                                <h6 className="main-info__item-subtitle">Time</h6>
+                                <h5 className="main-info__item-title">August 5, 11:00 – 14:00</h5>
+                                <p className="main-info__item-text">Metus turpis sit lorem lacus, in elit tellus lacus.</p>
+                            </div>
+                            <div className="main-info__item">
+                                <h6 className="main-info__item-subtitle">Price</h6>
+                                <h5 className="main-info__item-title">Free</h5>
+                                <p className="main-info__item-text">Rhoncus pellentesque auctor auctor orci vulputate faucibus quis ut.</p>
+                            </div>
 
-                        <div className="details-item">
-                            <button className="details-item__btn">+
-                                <h6 className="details-item__title"><span>Theme 3.</span> Aliquet lectus urna viverra in odio.</h6>
-                            </button>
-                            <p className="details-item__text">Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</p>
-                        </div>
+                            <a href="" className="event-main__link">Event on Facebook</a>
 
-                        <div className="details-item">
-                            <button className="details-item__btn">+
-                                <h6 className="details-item__title"><span>Theme 4.</span> Aliquet lectus urna viverra in odio.</h6>
-                            </button>
-                            <p className="details-item__text">Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</p>
-                        </div>
+                            <button className="main-info__btn orange-btn">Join the event</button>
 
                         </div>
-                </div>
-
-                <div className="event-main main-info">
-                    <div className="main-info__item">
-                        <h6 className="main-info__item-subtitle">Time</h6>
-                        <h5 className="main-info__item-title">August 5, 11:00 – 14:00</h5>
-                        <p className="main-info__item-text">Metus turpis sit lorem lacus, in elit tellus lacus.</p>
                     </div>
-                    <div className="main-info__item">
-                        <h6 className="main-info__item-subtitle">Price</h6>
-                        <h5 className="main-info__item-title">Free</h5>
-                        <p className="main-info__item-text">Rhoncus pellentesque auctor auctor orci vulputate faucibus quis ut.</p>
-                    </div>
-
-                    <a href="" className="event-main__link">Event on Facebook</a>
-
-                    <button className="main-info__btn orange-btn">Join the event</button>
-
                 </div>
+                
             </section>
 
             <section className="event-speaker">
@@ -171,7 +181,7 @@ const SingleEventPage = () => {
 
                             <button className="event-request__form-btn orange-btn"></button>
                         </form>
-                        <img src="" alt="" className="event-request__img" />
+                        <img src={request} alt="" className="event-request__img" />
                     </div>
                     
                 </div>
@@ -183,9 +193,19 @@ const SingleEventPage = () => {
                     <h2 className="section-title">You may be interested in</h2>
 
                     <div className="other-events__items">
-                        <div className="event-preview">
-                            
-                        </div>
+                        {events.map((event) => {
+                            return (
+                                <EventItem
+                                    date={event.date}
+                                    month={event.month}
+                                    start={event.start}
+                                    end={event.end}
+                                    title={event.title}
+                                    category={event.category}
+                                    key={event.id}
+                                />
+                            )
+                        })}
                     </div>
                 </div>
             </section>

@@ -121,6 +121,19 @@
             line-height: 130%;
             color: #d7dadd;
             margin-bottom: 16px;
+            position: relative;
+            width: 100%;
+            &::after {
+                position: absolute;
+                content: '';
+                width: calc(100% - 72px);
+                height: 1px;
+                background-color: #d7dadd;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 0;
+
+            }
         }
 
         &-title {
@@ -174,10 +187,20 @@
    
     .discount-form {
         display: flex;
+        justify-content: space-between;
         width: 100%;
         gap: 24px;
+        align-items: flex-end;
+        .form-label {
+            width: 100%;
+            max-width: 291px;
+            margin-bottom: 0;
+        }
     }
     .discount-form__btn {
+        width: 166px;
+        margin-left: auto;
+        padding: 0;
         
     }
 }
@@ -246,6 +269,7 @@
 
                 &__btn {
                     margin-top: 40px;
+                    width: 100%;
                 }
             }
         }
@@ -256,6 +280,7 @@
 
 .other-courses {
     padding-top: 185px;
+    padding-bottom: 180px;
     &__inner {
         position: relative;
     }
